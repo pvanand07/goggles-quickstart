@@ -1,0 +1,186 @@
+! name: Medical Search Engine - Trusted Sources Filter
+! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
+! public: true
+! author: Medical Search Filter
+! version: 2.1
+! updated: 2025-01-24
+
+! === GOVERNMENT & PUBLIC HEALTH (Highest Trust) ===
+$boost=10,site=nih.gov
+$boost=10,site=nlm.nih.gov
+$boost=10,site=pubmed.ncbi.nlm.nih.gov
+$boost=10,site=medlineplus.gov
+$boost=10,site=cdc.gov
+$boost=10,site=fda.gov
+$boost=9,site=nhlbi.nih.gov
+$boost=9,site=nimh.nih.gov
+$boost=9,site=niddk.nih.gov
+$boost=9,site=cancer.gov
+$boost=9,site=nia.nih.gov
+$boost=9,site=niaid.nih.gov
+$boost=8,site=health.gov
+$boost=8,site=genome.gov
+$boost=8,site=clinicaltrials.gov
+
+! === MAJOR MEDICAL INSTITUTIONS ===
+$boost=10,site=mayoclinic.org
+$boost=10,site=health.clevelandclinic.org
+$boost=10,site=hopkinsmedicine.org
+$boost=9,site=stanfordhealthcare.org
+$boost=9,site=uclahealth.org
+$boost=9,site=medicine.yale.edu
+$boost=9,site=mountsinai.org
+$boost=9,site=cedars-sinai.org
+$boost=8,site=brighamandwomens.org
+$boost=8,site=massgeneral.org
+$boost=7,site=health.harvard.edu
+
+! === MEDICAL REFERENCE & EDUCATION ===
+$boost=10,site=medscape.com
+$boost=9,site=merckmanuals.com
+$boost=9,site=uptodate.com
+$boost=8,site=patient.info
+$boost=8,site=drugs.com
+$boost=8,site=rxlist.com
+$boost=7,site=emedicine.medscape.com
+
+! === CONSUMER HEALTH SITES ===
+$boost=9,site=webmd.com
+$boost=9,site=healthline.com
+$boost=8,site=medicalnewstoday.com
+$boost=8,site=everydayhealth.com
+$boost=7,site=health.com
+$boost=7,site=verywellhealth.com
+
+! === PROFESSIONAL ORGANIZATIONS ===
+$boost=10,site=ama-assn.org
+$boost=9,site=aafp.org
+$boost=9,site=acponline.org
+$boost=9,site=aap.org
+$boost=8,site=acc.org
+$boost=8,site=rheumatology.org
+$boost=8,site=diabetes.org
+$boost=8,site=heart.org
+$boost=8,site=cancer.org
+$boost=8,site=lung.org
+$boost=8,site=kidney.org
+$boost=8,site=psychiatry.org
+
+! === MEDICAL JOURNALS (Open Access Prioritized) ===
+$boost=9,site=jamanetwork.com
+$boost=9,site=thelancet.com
+$boost=8,site=bmj.com
+$boost=8,site=nejm.org
+$boost=8,site=ahajournals.org
+$boost=8,site=nature.com/nm
+$boost=7,site=annals.org
+$boost=9,site=plos.org
+$boost=9,site=biomedcentral.com
+
+! === SPECIALTY SITES ===
+$boost=9,site=cochrane.org
+$boost=8,site=mdanderson.org
+$boost=8,site=mskcc.org
+$boost=8,site=chop.edu
+$boost=8,site=arthritis.org
+$boost=8,site=alz.org
+$boost=8,site=parkinson.org
+$boost=7,site=rarediseases.org
+
+! === INTERNATIONAL TRUSTED SOURCES ===
+! UK
+$boost=10,site=nhs.uk
+$boost=9,site=nice.org.uk
+$boost=8,site=bhf.org.uk
+$boost=8,site=cancerresearchuk.org
+$boost=8,site=gov.uk/government/organisations/public-health-england
+
+! Canada
+$boost=9,site=canada.ca/en/public-health
+$boost=8,site=cmaj.ca
+$boost=8,site=cma.ca
+
+! WHO & International
+$boost=10,site=who.int
+$boost=8,site=euro.who.int
+
+! Australia
+$boost=9,site=healthdirect.gov.au
+$boost=8,site=health.gov.au
+
+! === MEDICAL NEWS & UPDATES ===
+$boost=8,site=medpagetoday.com
+$boost=7,site=statnews.com
+$boost=7,site=medicalxpress.com
+$boost=7,site=sciencedaily.com/news/health_medicine
+
+! === SITES TO DISCARD ===
+! Paywalled content
+$discard,site=nytimes.com
+$discard,site=wsj.com
+$discard,site=ft.com
+$discard,site=washingtonpost.com
+$discard,site=economist.com
+$discard,site=bloomberg.com
+$discard,site=businessinsider.com
+$discard,site=theatlantic.com
+
+! Spam/Low quality medical sites
+$discard,site=healthgrades.com
+$discard,site=zocdoc.com
+$discard,site=vitals.com
+$discard,site=ratemds.com
+$discard,site=sharecare.com
+$discard,site=realself.com
+
+! Alternative medicine/Pseudoscience
+$discard,site=mercola.com
+$discard,site=naturalnews.com
+$discard,site=draxe.com
+$discard,site=goop.com
+$discard,site=greenmedinfo.com
+$discard,site=foodbabe.com
+$discard,site=collective-evolution.com
+$discard,site=thetruthaboutcancer.com
+$discard,site=realfarmacy.com
+$discard,site=globalresearch.ca
+$discard,site=jedanews.com
+$discard,site=ripostelaique.com
+$discard,site=lesmoutonsrebelles.com
+$discard,site=sonsoflibertymedia.com
+$discard,site=wakingtimes.com
+
+! Content farms/Aggregators
+$discard,site=answers.com
+$discard,site=ehow.com
+$discard,site=livestrong.com
+$discard,site=wikihow.com
+$discard,site=reference.com
+$discard,site=symptomfind.com
+$discard,site=dailymail.co.uk
+$discard,site=buzzfeed.com
+
+! Unreliable health blogs
+$discard,site=mindbodygreen.com
+$discard,site=wellandgood.com
+$discard,site=thehealthy.com
+$discard,site=prevention.com
+$discard,site=womenshealthmag.com
+$discard,site=menshealth.com
+
+! Supplement/Product promotion sites
+$discard,site=examine.com
+$discard,site=selfhacked.com
+$discard,site=bulletproof.com
+$discard,site=lifeextension.com
+
+! Social media and forums
+$discard,site=reddit.com
+$discard,site=quora.com
+$discard,site=facebook.com
+$discard,site=pinterest.com
+$discard,site=instagram.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=tiktok.com
+$discard,site=tumblr.com
