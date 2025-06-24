@@ -191,6 +191,7 @@ $discard,site=economist.com
 $discard,site=bloomberg.com
 $discard,site=businessinsider.com
 $discard,site=theatlantic.com
+$discard,site=uptodate.com
 
 ! Spam/Low quality medical sites
 $discard,site=healthgrades.com
