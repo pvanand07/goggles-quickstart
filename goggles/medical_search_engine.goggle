@@ -2,8 +2,11 @@
 ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
 ! public: true
 ! author: Medical Search Filter
-! version: 2.1
+! version: 2.2
 ! updated: 2025-01-24
+! homepage: https://github.com/pvanand07/goggles-quickstart
+! issues: https://github.com/pvanand07/goggles-quickstart/issues
+! license: MIT
 
 ! === GOVERNMENT & PUBLIC HEALTH (Highest Trust) ===
 $boost=10,site=nih.gov
@@ -18,6 +21,11 @@ $boost=9,site=niddk.nih.gov
 $boost=9,site=cancer.gov
 $boost=9,site=nia.nih.gov
 $boost=9,site=niaid.nih.gov
+$boost=9,site=nci.nih.gov
+$boost=9,site=nei.nih.gov
+$boost=9,site=nidcd.nih.gov
+$boost=9,site=ninds.nih.gov
+$boost=9,site=nichd.nih.gov
 $boost=8,site=health.gov
 $boost=8,site=genome.gov
 $boost=8,site=clinicaltrials.gov
@@ -31,17 +39,34 @@ $boost=9,site=uclahealth.org
 $boost=9,site=medicine.yale.edu
 $boost=9,site=mountsinai.org
 $boost=9,site=cedars-sinai.org
+$boost=9,site=nyulangone.org
+$boost=9,site=health.usnews.com
 $boost=8,site=brighamandwomens.org
 $boost=8,site=massgeneral.org
-$boost=7,site=health.harvard.edu
+$boost=8,site=health.harvard.edu
+$boost=8,site=med.harvard.edu
+$boost=8,site=medicine.duke.edu
+$boost=8,site=medicine.washington.edu
+$boost=8,site=medicine.ucsf.edu
+$boost=8,site=med.stanford.edu
+$boost=8,site=medicine.upenn.edu
+$boost=8,site=med.nyu.edu
 
 ! === MEDICAL REFERENCE & EDUCATION ===
 $boost=10,site=medscape.com
 $boost=9,site=merckmanuals.com
 $boost=9,site=uptodate.com
 $boost=8,site=patient.info
-$boost=8,site=drugs.com
-$boost=8,site=rxlist.com
+
+! === DRUG INFORMATION & DATABASES ===
+$boost=9,site=drugs.com
+$boost=9,site=rxlist.com
+$boost=9,site=dailymed.nlm.nih.gov
+$boost=8,site=drugbank.com
+$boost=8,site=pdr.net
+$boost=8,site=epocrates.com
+$boost=8,site=druginfo.nlm.nih.gov
+$boost=7,site=goodrx.com
 $boost=7,site=emedicine.medscape.com
 
 ! === CONSUMER HEALTH SITES ===
@@ -75,6 +100,9 @@ $boost=8,site=ahajournals.org
 $boost=7,site=annals.org
 $boost=9,site=plos.org
 $boost=9,site=biomedcentral.com
+$boost=8,site=academic.oup.com
+$boost=8,site=journals.lww.com
+$boost=8,site=onlinelibrary.wiley.com
 
 ! === SPECIALTY SITES ===
 $boost=9,site=cochrane.org
@@ -84,6 +112,9 @@ $boost=8,site=chop.edu
 $boost=8,site=arthritis.org
 $boost=8,site=alz.org
 $boost=8,site=parkinson.org
+$boost=8,site=my.clevelandclinic.org
+$boost=8,site=health.johnshopkins.edu
+$boost=8,site=healthblog.uofmhealth.org
 $boost=7,site=rarediseases.org
 
 ! === INTERNATIONAL TRUSTED SOURCES ===
@@ -92,10 +123,12 @@ $boost=10,site=nhs.uk
 $boost=9,site=nice.org.uk
 $boost=8,site=bhf.org.uk
 $boost=8,site=cancerresearchuk.org
+$boost=8,site=patient.co.uk
 
 ! Canada
 $boost=8,site=cmaj.ca
 $boost=8,site=cma.ca
+$boost=8,site=healthlinkbc.ca
 
 ! WHO & International
 $boost=10,site=who.int
@@ -104,6 +137,7 @@ $boost=8,site=euro.who.int
 ! Australia
 $boost=9,site=healthdirect.gov.au
 $boost=8,site=health.gov.au
+$boost=8,site=betterhealth.vic.gov.au
 
 ! === MEDICAL NEWS & UPDATES ===
 $boost=8,site=medpagetoday.com
