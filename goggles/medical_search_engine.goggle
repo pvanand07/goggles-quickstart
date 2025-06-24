@@ -72,7 +72,6 @@ $boost=9,site=thelancet.com
 $boost=8,site=bmj.com
 $boost=8,site=nejm.org
 $boost=8,site=ahajournals.org
-$boost=8,site=nature.com/nm
 $boost=7,site=annals.org
 $boost=9,site=plos.org
 $boost=9,site=biomedcentral.com
@@ -93,10 +92,8 @@ $boost=10,site=nhs.uk
 $boost=9,site=nice.org.uk
 $boost=8,site=bhf.org.uk
 $boost=8,site=cancerresearchuk.org
-$boost=8,site=gov.uk/government/organisations/public-health-england
 
 ! Canada
-$boost=9,site=canada.ca/en/public-health
 $boost=8,site=cmaj.ca
 $boost=8,site=cma.ca
 
@@ -112,7 +109,7 @@ $boost=8,site=health.gov.au
 $boost=8,site=medpagetoday.com
 $boost=7,site=statnews.com
 $boost=7,site=medicalxpress.com
-$boost=7,site=sciencedaily.com/news/health_medicine
+$boost=7,site=sciencedaily.com
 
 ! === SITES TO DISCARD ===
 ! Paywalled content
