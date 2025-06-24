@@ -2,71 +2,71 @@
 ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
 ! public: true
 ! author: Medical Search Filter
-! version: 2.3
+! version: 3.0
 ! updated: 2025-01-24
 ! homepage: https://github.com/pvanand07/goggles-quickstart
 ! issues: https://github.com/pvanand07/goggles-quickstart/issues
 ! license: MIT
 
 ! === GOVERNMENT & PUBLIC HEALTH (Highest Trust) ===
-$boost=10,site=nih.gov
-$boost=10,site=nlm.nih.gov
-$boost=10,site=pubmed.ncbi.nlm.nih.gov
-$boost=10,site=medlineplus.gov
-$boost=10,site=cdc.gov
-$boost=10,site=fda.gov
-$boost=9,site=nhlbi.nih.gov
-$boost=9,site=nimh.nih.gov
-$boost=9,site=niddk.nih.gov
-$boost=9,site=cancer.gov
-$boost=9,site=nia.nih.gov
-$boost=9,site=niaid.nih.gov
-$boost=9,site=nci.nih.gov
-$boost=9,site=nei.nih.gov
-$boost=9,site=nidcd.nih.gov
-$boost=9,site=ninds.nih.gov
-$boost=9,site=nichd.nih.gov
-$boost=8,site=health.gov
-$boost=8,site=genome.gov
-$boost=8,site=clinicaltrials.gov
+$boost=9,site=nih.gov
+$boost=9,site=nlm.nih.gov
+$boost=9,site=pubmed.ncbi.nlm.nih.gov
+$boost=9,site=medlineplus.gov
+$boost=9,site=cdc.gov
+$boost=9,site=fda.gov
+$boost=8,site=nhlbi.nih.gov
+$boost=8,site=nimh.nih.gov
+$boost=8,site=niddk.nih.gov
+$boost=8,site=cancer.gov
+$boost=8,site=nia.nih.gov
+$boost=8,site=niaid.nih.gov
+$boost=8,site=nci.nih.gov
+$boost=8,site=nei.nih.gov
+$boost=8,site=nidcd.nih.gov
+$boost=8,site=ninds.nih.gov
+$boost=8,site=nichd.nih.gov
+$boost=7,site=health.gov
+$boost=7,site=genome.gov
+$boost=7,site=clinicaltrials.gov
 
 ! === MAJOR MEDICAL INSTITUTIONS ===
-$boost=10,site=mayoclinic.org
-$boost=10,site=health.clevelandclinic.org
-$boost=10,site=hopkinsmedicine.org
-$boost=9,site=stanfordhealthcare.org
-$boost=9,site=uclahealth.org
-$boost=9,site=medicine.yale.edu
-$boost=9,site=mountsinai.org
-$boost=9,site=cedars-sinai.org
-$boost=9,site=nyulangone.org
-$boost=9,site=health.usnews.com
-$boost=8,site=brighamandwomens.org
-$boost=8,site=massgeneral.org
-$boost=8,site=health.harvard.edu
-$boost=8,site=med.harvard.edu
-$boost=8,site=medicine.duke.edu
-$boost=8,site=medicine.washington.edu
-$boost=8,site=medicine.ucsf.edu
-$boost=8,site=med.stanford.edu
-$boost=8,site=medicine.upenn.edu
-$boost=8,site=med.nyu.edu
+$boost=9,site=mayoclinic.org
+$boost=9,site=health.clevelandclinic.org
+$boost=9,site=hopkinsmedicine.org
+$boost=8,site=stanfordhealthcare.org
+$boost=8,site=uclahealth.org
+$boost=8,site=mountsinai.org
+$boost=8,site=cedars-sinai.org
+$boost=8,site=nyulangone.org
+$boost=8,site=health.usnews.com
+$boost=7,site=brighamandwomens.org
+$boost=7,site=massgeneral.org
+$boost=7,site=health.harvard.edu
+$boost=7,site=med.harvard.edu
+$boost=7,site=medicine.yale.edu
+$boost=7,site=medicine.duke.edu
+$boost=7,site=medicine.washington.edu
+$boost=7,site=medicine.ucsf.edu
+$boost=7,site=med.stanford.edu
+$boost=7,site=medicine.upenn.edu
+$boost=7,site=med.nyu.edu
 
 ! === MEDICAL REFERENCE & EDUCATION ===
-$boost=10,site=medscape.com
-$boost=9,site=merckmanuals.com
-$boost=9,site=uptodate.com
-$boost=8,site=patient.info
+$boost=8,site=medscape.com
+$boost=8,site=merckmanuals.com
+$boost=7,site=uptodate.com
+$boost=7,site=patient.info
 
 ! === DRUG INFORMATION & DATABASES ===
-$boost=9,site=drugs.com
-$boost=9,site=rxlist.com
-$boost=9,site=dailymed.nlm.nih.gov
-$boost=8,site=drugbank.com
-$boost=8,site=pdr.net
-$boost=8,site=epocrates.com
-$boost=8,site=druginfo.nlm.nih.gov
-$boost=7,site=goodrx.com
+$boost=8,site=drugs.com
+$boost=8,site=rxlist.com
+$boost=8,site=dailymed.nlm.nih.gov
+$boost=7,site=drugbank.com
+$boost=7,site=pdr.net
+$boost=7,site=epocrates.com
+$boost=7,site=druginfo.nlm.nih.gov
+$boost=6,site=goodrx.com
 $boost=7,site=emedicine.medscape.com
 
 ! === CONSUMER HEALTH SITES ===
@@ -78,108 +78,108 @@ $boost=7,site=health.com
 $boost=7,site=verywellhealth.com
 
 ! === PROFESSIONAL ORGANIZATIONS ===
-$boost=10,site=ama-assn.org
-$boost=9,site=aafp.org
-$boost=9,site=acponline.org
-$boost=9,site=aap.org
-$boost=9,site=acog.org
-$boost=9,site=aad.org
-$boost=9,site=aaos.org
-$boost=9,site=aan.com
-$boost=8,site=acc.org
-$boost=8,site=rheumatology.org
-$boost=8,site=diabetes.org
-$boost=8,site=heart.org
-$boost=8,site=cancer.org
-$boost=8,site=lung.org
-$boost=8,site=kidney.org
-$boost=8,site=psychiatry.org
-$boost=8,site=gastro.org
-$boost=8,site=auanet.org
-$boost=8,site=aao.org
-$boost=8,site=skincancer.org
-$boost=8,site=idsociety.org
-$boost=8,site=cardiosmart.org
-$boost=8,site=cancer.net
+$boost=9,site=ama-assn.org
+$boost=8,site=aafp.org
+$boost=8,site=acponline.org
+$boost=8,site=aap.org
+$boost=8,site=acog.org
+$boost=7,site=aad.org
+$boost=7,site=aaos.org
+$boost=7,site=aan.com
+$boost=7,site=acc.org
+$boost=7,site=rheumatology.org
+$boost=7,site=diabetes.org
+$boost=7,site=heart.org
+$boost=7,site=cancer.org
+$boost=7,site=lung.org
+$boost=7,site=kidney.org
+$boost=7,site=psychiatry.org
+$boost=7,site=gastro.org
+$boost=7,site=auanet.org
+$boost=7,site=aao.org
+$boost=6,site=skincancer.org
+$boost=6,site=idsociety.org
+$boost=6,site=cardiosmart.org
+$boost=6,site=cancer.net
 
 ! === MEDICAL JOURNALS (Open Access Prioritized) ===
-$boost=9,site=jamanetwork.com
-$boost=9,site=thelancet.com
+$boost=8,site=jamanetwork.com
+$boost=8,site=thelancet.com
 $boost=8,site=bmj.com
-$boost=8,site=nejm.org
-$boost=8,site=ahajournals.org
-$boost=7,site=annals.org
-$boost=9,site=plos.org
-$boost=9,site=biomedcentral.com
-$boost=8,site=academic.oup.com
-$boost=8,site=journals.lww.com
-$boost=8,site=onlinelibrary.wiley.com
+$boost=8,site=plos.org
+$boost=8,site=biomedcentral.com
+$boost=7,site=nejm.org
+$boost=7,site=ahajournals.org
+$boost=7,site=academic.oup.com
+$boost=6,site=annals.org
+$boost=6,site=journals.lww.com
+$boost=6,site=onlinelibrary.wiley.com
 
 ! === SPECIALTY PATIENT EDUCATION ===
 ! Mental Health
-$boost=8,site=nami.org
-$boost=8,site=samhsa.gov
-$boost=7,site=psychologytoday.com
-$boost=7,site=anxiety.org
-$boost=7,site=depression.org
+$boost=7,site=nami.org
+$boost=7,site=samhsa.gov
+$boost=6,site=psychologytoday.com
+$boost=6,site=anxiety.org
+$boost=6,site=depression.org
 
 ! Women's Health
-$boost=8,site=womenshealth.gov
-$boost=7,site=plannedparenthood.org
+$boost=7,site=womenshealth.gov
+$boost=6,site=plannedparenthood.org
 
 ! Pediatrics
-$boost=8,site=healthychildren.org
-$boost=8,site=kidshealth.org
-$boost=7,site=childrenshospital.org
-$boost=7,site=seattlechildrens.org
+$boost=7,site=healthychildren.org
+$boost=7,site=kidshealth.org
+$boost=6,site=childrenshospital.org
+$boost=6,site=seattlechildrens.org
 
 ! Cancer Organizations
-$boost=8,site=lls.org
-$boost=8,site=komen.org
+$boost=7,site=lls.org
+$boost=7,site=komen.org
 
 ! Medical Education
-$boost=8,site=aamc.org
+$boost=7,site=aamc.org
 
 ! === SPECIALTY SITES ===
-$boost=9,site=cochrane.org
-$boost=8,site=mdanderson.org
-$boost=8,site=mskcc.org
-$boost=8,site=chop.edu
-$boost=8,site=arthritis.org
-$boost=8,site=alz.org
-$boost=8,site=parkinson.org
-$boost=8,site=my.clevelandclinic.org
-$boost=8,site=health.johnshopkins.edu
-$boost=8,site=healthblog.uofmhealth.org
-$boost=7,site=rarediseases.org
+$boost=8,site=cochrane.org
+$boost=7,site=mdanderson.org
+$boost=7,site=mskcc.org
+$boost=7,site=chop.edu
+$boost=7,site=arthritis.org
+$boost=7,site=alz.org
+$boost=7,site=parkinson.org
+$boost=6,site=my.clevelandclinic.org
+$boost=6,site=health.johnshopkins.edu
+$boost=6,site=healthblog.uofmhealth.org
+$boost=6,site=rarediseases.org
 
 ! === INTERNATIONAL TRUSTED SOURCES ===
 ! UK
-$boost=10,site=nhs.uk
-$boost=9,site=nice.org.uk
-$boost=8,site=bhf.org.uk
-$boost=8,site=cancerresearchuk.org
-$boost=8,site=patient.co.uk
+$boost=9,site=nhs.uk
+$boost=8,site=nice.org.uk
+$boost=7,site=bhf.org.uk
+$boost=7,site=cancerresearchuk.org
+$boost=7,site=patient.co.uk
 
 ! Canada
-$boost=8,site=cmaj.ca
-$boost=8,site=cma.ca
-$boost=8,site=healthlinkbc.ca
+$boost=7,site=cmaj.ca
+$boost=7,site=cma.ca
+$boost=6,site=healthlinkbc.ca
 
 ! WHO & International
-$boost=10,site=who.int
-$boost=8,site=euro.who.int
+$boost=9,site=who.int
+$boost=7,site=euro.who.int
 
 ! Australia
-$boost=9,site=healthdirect.gov.au
-$boost=8,site=health.gov.au
-$boost=8,site=betterhealth.vic.gov.au
+$boost=8,site=healthdirect.gov.au
+$boost=7,site=health.gov.au
+$boost=6,site=betterhealth.vic.gov.au
 
 ! === MEDICAL NEWS & UPDATES ===
-$boost=8,site=medpagetoday.com
-$boost=7,site=statnews.com
-$boost=7,site=medicalxpress.com
-$boost=7,site=sciencedaily.com
+$boost=7,site=medpagetoday.com
+$boost=6,site=statnews.com
+$boost=6,site=medicalxpress.com
+$boost=6,site=sciencedaily.com
 
 ! === SITES TO DISCARD ===
 ! Paywalled content
