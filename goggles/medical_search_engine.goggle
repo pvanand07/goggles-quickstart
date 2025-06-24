@@ -2,7 +2,7 @@
 ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
 ! public: true
 ! author: Medical Search Filter
-! version: 2.2
+! version: 2.3
 ! updated: 2025-01-24
 ! homepage: https://github.com/pvanand07/goggles-quickstart
 ! issues: https://github.com/pvanand07/goggles-quickstart/issues
@@ -82,6 +82,10 @@ $boost=10,site=ama-assn.org
 $boost=9,site=aafp.org
 $boost=9,site=acponline.org
 $boost=9,site=aap.org
+$boost=9,site=acog.org
+$boost=9,site=aad.org
+$boost=9,site=aaos.org
+$boost=9,site=aan.com
 $boost=8,site=acc.org
 $boost=8,site=rheumatology.org
 $boost=8,site=diabetes.org
@@ -90,6 +94,13 @@ $boost=8,site=cancer.org
 $boost=8,site=lung.org
 $boost=8,site=kidney.org
 $boost=8,site=psychiatry.org
+$boost=8,site=gastro.org
+$boost=8,site=auanet.org
+$boost=8,site=aao.org
+$boost=8,site=skincancer.org
+$boost=8,site=idsociety.org
+$boost=8,site=cardiosmart.org
+$boost=8,site=cancer.net
 
 ! === MEDICAL JOURNALS (Open Access Prioritized) ===
 $boost=9,site=jamanetwork.com
@@ -103,6 +114,31 @@ $boost=9,site=biomedcentral.com
 $boost=8,site=academic.oup.com
 $boost=8,site=journals.lww.com
 $boost=8,site=onlinelibrary.wiley.com
+
+! === SPECIALTY PATIENT EDUCATION ===
+! Mental Health
+$boost=8,site=nami.org
+$boost=8,site=samhsa.gov
+$boost=7,site=psychologytoday.com
+$boost=7,site=anxiety.org
+$boost=7,site=depression.org
+
+! Women's Health
+$boost=8,site=womenshealth.gov
+$boost=7,site=plannedparenthood.org
+
+! Pediatrics
+$boost=8,site=healthychildren.org
+$boost=8,site=kidshealth.org
+$boost=7,site=childrenshospital.org
+$boost=7,site=seattlechildrens.org
+
+! Cancer Organizations
+$boost=8,site=lls.org
+$boost=8,site=komen.org
+
+! Medical Education
+$boost=8,site=aamc.org
 
 ! === SPECIALTY SITES ===
 $boost=9,site=cochrane.org
