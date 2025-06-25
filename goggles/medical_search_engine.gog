@@ -1,0 +1,254 @@
+ ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
+ ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
+ ! public: true
+ ! public: true
+ ! author: Medical Search Filter
+ ! author: Medical Search Filter
+! version: 3.0
+! avatar: #00A86B
+! updated: 2025-01-24
+
+! homepage: https://github.com/pvanand07/goggles-quickstart
+! Boost - Government & Public Health (Highest Trust)
+! issues: https://github.com/pvanand07/goggles-quickstart/issues
+! license: MIT
+
+! Boost - Government & Public Health (Highest Trust)
+$boost=9,site=nih.gov
+$boost=9,site=nlm.nih.gov
+$boost=9,site=pubmed.ncbi.nlm.nih.gov
+$boost=9,site=medlineplus.gov
+$boost=9,site=cdc.gov
+$boost=9,site=fda.gov
+$boost=8,site=nhlbi.nih.gov
+$boost=8,site=nimh.nih.gov
+$boost=8,site=niddk.nih.gov
+$boost=8,site=cancer.gov
+$boost=8,site=nia.nih.gov
+$boost=8,site=niaid.nih.gov
+$boost=8,site=nci.nih.gov
+$boost=8,site=nei.nih.gov
+$boost=8,site=nidcd.nih.gov
+$boost=8,site=ninds.nih.gov
+$boost=8,site=nichd.nih.gov
+$boost=7,site=health.gov
+$boost=7,site=genome.gov
+$boost=7,site=clinicaltrials.gov
+
+! Boost - Major Medical Institutions
+$boost=9,site=mayoclinic.org
+/health^$boost=9,site=clevelandclinic.org
+$boost=9,site=hopkinsmedicine.org
+$boost=8,site=stanfordhealthcare.org
+$boost=8,site=uclahealth.org
+$boost=8,site=mountsinai.org
+$boost=8,site=cedars-sinai.org
+$boost=8,site=nyulangone.org
+/health^$boost=8,site=usnews.com
+$boost=7,site=brighamandwomens.org
+$boost=7,site=massgeneral.org
+/health^$boost=7,site=harvard.edu
+/med^$boost=7,site=harvard.edu
+/medicine^$boost=7,site=yale.edu
+/medicine^$boost=7,site=duke.edu
+/medicine^$boost=7,site=washington.edu
+/medicine^$boost=7,site=ucsf.edu
+/med^$boost=7,site=stanford.edu
+/medicine^$boost=7,site=upenn.edu
+/med^$boost=7,site=nyu.edu
+/medical-professionals/publications/$boost=8,site=mayoclinic.org
+/patient-care-and-health-information/$boost=9,site=mayoclinic.org
+
+! Boost - Medical Reference & Education
+$boost=8,site=medscape.com
+$boost=8,site=merckmanuals.com
+$boost=7,site=patient.info
+
+! Boost - Drug Information & Databases
+$boost=8,site=drugs.com
+$boost=8,site=rxlist.com
+$boost=8,site=dailymed.nlm.nih.gov
+$boost=7,site=drugbank.com
+$boost=7,site=pdr.net
+$boost=7,site=epocrates.com
+$boost=7,site=druginfo.nlm.nih.gov
+$boost=6,site=goodrx.com
+/emedicine^$boost=7,site=medscape.com
+
+! Boost - Consumer Health Sites
+$boost=9,site=webmd.com
+$boost=9,site=healthline.com
+$boost=8,site=medicalnewstoday.com
+$boost=8,site=everydayhealth.com
+$boost=7,site=health.com
+$boost=7,site=verywellhealth.com
+
+! Boost - Professional Organizations
+$boost=9,site=ama-assn.org
+$boost=8,site=aafp.org
+$boost=8,site=acponline.org
+$boost=8,site=aap.org
+$boost=8,site=acog.org
+$boost=7,site=aad.org
+$boost=7,site=aaos.org
+$boost=7,site=aan.com
+$boost=7,site=acc.org
+$boost=7,site=rheumatology.org
+$boost=7,site=diabetes.org
+$boost=7,site=heart.org
+$boost=7,site=cancer.org
+$boost=7,site=lung.org
+$boost=7,site=kidney.org
+$boost=7,site=psychiatry.org
+$boost=7,site=gastro.org
+$boost=7,site=auanet.org
+$boost=7,site=aao.org
+$boost=6,site=skincancer.org
+$boost=6,site=idsociety.org
+$boost=6,site=cardiosmart.org
+$boost=6,site=cancer.net
+
+! Boost - Medical Journals (Open Access Prioritized)
+/journals/jama/$boost=8,site=jamanetwork.com
+$boost=8,site=jamanetwork.com
+$boost=8,site=thelancet.com
+$boost=8,site=bmj.com
+$boost=8,site=plos.org
+$boost=8,site=biomedcentral.com
+$boost=7,site=nejm.org
+$boost=7,site=ahajournals.org
+$boost=7,site=academic.oup.com
+/journal/journallist/$boost=7,site=academic.oup.com
+$boost=6,site=annals.org
+$boost=6,site=journals.lww.com
+$boost=6,site=onlinelibrary.wiley.com
+
+! Boost - Specialty Patient Education
+$boost=7,site=nami.org
+$boost=7,site=samhsa.gov
+$boost=6,site=psychologytoday.com
+$boost=6,site=anxiety.org
+$boost=6,site=depression.org
+$boost=7,site=womenshealth.gov
+$boost=6,site=plannedparenthood.org
+$boost=7,site=healthychildren.org
+$boost=7,site=kidshealth.org
+$boost=6,site=childrenshospital.org
+$boost=6,site=seattlechildrens.org
+$boost=7,site=lls.org
+$boost=7,site=komen.org
+$boost=7,site=aamc.org
+
+! Boost - Specialty Sites
+$boost=8,site=cochrane.org
+$boost=7,site=mdanderson.org
+$boost=7,site=mskcc.org
+$boost=7,site=chop.edu
+$boost=7,site=arthritis.org
+$boost=7,site=alz.org
+$boost=7,site=parkinson.org
+/my^$boost=6,site=clevelandclinic.org
+/health^$boost=6,site=johnshopkins.edu
+/healthblog^$boost=6,site=uofmhealth.org
+$boost=6,site=rarediseases.org
+
+! Boost - International Trusted Sources
+$boost=9,site=nhs.uk
+$boost=8,site=nice.org.uk
+$boost=7,site=bhf.org.uk
+$boost=7,site=cancerresearchuk.org
+$boost=7,site=patient.co.uk
+$boost=7,site=cmaj.ca
+$boost=7,site=cma.ca
+$boost=6,site=healthlinkbc.ca
+$boost=9,site=who.int
+$boost=7,site=euro.who.int
+$boost=8,site=healthdirect.gov.au
+$boost=7,site=health.gov.au
+$boost=6,site=betterhealth.vic.gov.au
+
+! Boost - Medical News & Updates
+$boost=7,site=medpagetoday.com
+$boost=6,site=statnews.com
+$boost=6,site=medicalxpress.com
+$boost=6,site=sciencedaily.com
+
+! Remove - Paywalled content
+$discard,site=nytimes.com
+$discard,site=wsj.com
+/public/page/news-opinion-commentary.html^$discard,site=wsj.com
+$discard,site=ft.com
+$discard,site=washingtonpost.com
+$discard,site=economist.com
+$discard,site=bloomberg.com
+$discard,site=businessinsider.com
+$discard,site=theatlantic.com
+$discard,site=uptodate.com
+
+! Remove - Spam/Low quality medical sites
+$discard,site=healthgrades.com
+$discard,site=zocdoc.com
+$discard,site=vitals.com
+$discard,site=ratemds.com
+$discard,site=sharecare.com
+$discard,site=realself.com
+
+! Remove - Alternative medicine/Pseudoscience
+$discard,site=mercola.com
+$discard,site=naturalnews.com
+$discard,site=draxe.com
+$discard,site=goop.com
+$discard,site=greenmedinfo.com
+$discard,site=foodbabe.com
+$discard,site=collective-evolution.com
+$discard,site=thetruthaboutcancer.com
+$discard,site=realfarmacy.com
+$discard,site=globalresearch.ca
+$discard,site=jedanews.com
+$discard,site=ripostelaique.com
+$discard,site=lesmoutonsrebelles.com
+$discard,site=sonsoflibertymedia.com
+$discard,site=wakingtimes.com
+
+! Remove - Content farms/Aggregators
+$discard,site=answers.com
+$discard,site=ehow.com
+$discard,site=livestrong.com
+$discard,site=wikihow.com
+$discard,site=reference.com
+$discard,site=symptomfind.com
+$discard,site=dailymail.co.uk
+$discard,site=buzzfeed.com
+$discard,site=yahoo.com
+$discard,site=msn.com
+$discard,site=aol.com
+
+! Remove - Unreliable health blogs
+$discard,site=mindbodygreen.com
+$discard,site=wellandgood.com
+$discard,site=thehealthy.com
+$discard,site=prevention.com
+$discard,site=womenshealthmag.com
+$discard,site=menshealth.com
+/health^$discard,site=cnn.com
+/business^$discard,site=cnn.com
+/opinions^$discard,site=cnn.com
+/health^$discard,site=theguardian.com
+/opinion^$discard,site=nypost.com
+
+! Remove - Supplement/Product promotion sites
+$discard,site=examine.com
+$discard,site=selfhacked.com
+$discard,site=bulletproof.com
+$discard,site=lifeextension.com
+
+! Remove - Social media and forums
+$discard,site=reddit.com
+$discard,site=quora.com
+$discard,site=facebook.com
+$discard,site=pinterest.com
+$discard,site=instagram.com
+$discard,site=twitter.com
+$discard,site=x.com
+$discard,site=tiktok.com
+$discard,site=tumblr.com
