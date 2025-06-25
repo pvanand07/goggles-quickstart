@@ -55,7 +55,6 @@ $site=med.nyu.edu$boost=7
 ! === MEDICAL REFERENCE & EDUCATION ===
 $site=medscape.com$boost=8
 $site=merckmanuals.com$boost=8
-$site=uptodate.com$boost=7
 $site=patient.info$boost=7
 
 ! === DRUG INFORMATION & DATABASES ===
@@ -116,19 +115,28 @@ $site=journals.lww.com$boost=6
 $site=onlinelibrary.wiley.com$boost=6
 
 ! === SPECIALTY PATIENT EDUCATION ===
+! Mental Health
 $site=nami.org$boost=7
 $site=samhsa.gov$boost=7
 $site=psychologytoday.com$boost=6
 $site=anxiety.org$boost=6
 $site=depression.org$boost=6
+
+! Women's Health
 $site=womenshealth.gov$boost=7
 $site=plannedparenthood.org$boost=6
+
+! Pediatrics
 $site=healthychildren.org$boost=7
 $site=kidshealth.org$boost=7
 $site=childrenshospital.org$boost=6
 $site=seattlechildrens.org$boost=6
+
+! Cancer Organizations
 $site=lls.org$boost=7
 $site=komen.org$boost=7
+
+! Medical Education
 $site=aamc.org$boost=7
 
 ! === SPECIALTY SITES ===
@@ -145,16 +153,23 @@ $site=healthblog.uofmhealth.org$boost=6
 $site=rarediseases.org$boost=6
 
 ! === INTERNATIONAL TRUSTED SOURCES ===
+! UK
 $site=nhs.uk$boost=9
 $site=nice.org.uk$boost=8
 $site=bhf.org.uk$boost=7
 $site=cancerresearchuk.org$boost=7
 $site=patient.co.uk$boost=7
+
+! Canada
 $site=cmaj.ca$boost=7
 $site=cma.ca$boost=7
 $site=healthlinkbc.ca$boost=6
+
+! WHO & International
 $site=who.int$boost=9
 $site=euro.who.int$boost=7
+
+! Australia
 $site=healthdirect.gov.au$boost=8
 $site=health.gov.au$boost=7
 $site=betterhealth.vic.gov.au$boost=6
@@ -166,6 +181,7 @@ $site=medicalxpress.com$boost=6
 $site=sciencedaily.com$boost=6
 
 ! === SITES TO DISCARD ===
+! Paywalled content
 $site=nytimes.com$discard
 $site=wsj.com$discard
 $site=ft.com$discard
@@ -176,6 +192,7 @@ $site=businessinsider.com$discard
 $site=theatlantic.com$discard
 $site=uptodate.com$discard
 
+! Spam/Low quality medical sites
 $site=healthgrades.com$discard
 $site=zocdoc.com$discard
 $site=vitals.com$discard
@@ -183,6 +200,7 @@ $site=ratemds.com$discard
 $site=sharecare.com$discard
 $site=realself.com$discard
 
+! Alternative medicine/Pseudoscience
 $site=mercola.com$discard
 $site=naturalnews.com$discard
 $site=draxe.com$discard
@@ -199,6 +217,7 @@ $site=lesmoutonsrebelles.com$discard
 $site=sonsoflibertymedia.com$discard
 $site=wakingtimes.com$discard
 
+! Content farms/Aggregators
 $site=answers.com$discard
 $site=ehow.com$discard
 $site=livestrong.com$discard
@@ -208,6 +227,7 @@ $site=symptomfind.com$discard
 $site=dailymail.co.uk$discard
 $site=buzzfeed.com$discard
 
+! Unreliable health blogs
 $site=mindbodygreen.com$discard
 $site=wellandgood.com$discard
 $site=thehealthy.com$discard
@@ -215,11 +235,13 @@ $site=prevention.com$discard
 $site=womenshealthmag.com$discard
 $site=menshealth.com$discard
 
+! Supplement/Product promotion sites
 $site=examine.com$discard
 $site=selfhacked.com$discard
 $site=bulletproof.com$discard
 $site=lifeextension.com$discard
 
+! Social media and forums
 $site=reddit.com$discard
 $site=quora.com$discard
 $site=facebook.com$discard
