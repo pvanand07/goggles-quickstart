@@ -1,9 +1,10 @@
+! name: Medical Search Engine
 ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
 ! public: true
 ! author: Medical Search Filter
-! version: 3.0
 ! avatar: #00A86B
 ! updated: 2025-06-25
+! version: 3.0
 
 ! homepage: https://github.com/pvanand07/goggles-quickstart
 ! issues: https://github.com/pvanand07/goggles-quickstart/issues
