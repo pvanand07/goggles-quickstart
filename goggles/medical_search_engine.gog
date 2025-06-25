@@ -1,15 +1,11 @@
- ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
- ! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
- ! public: true
- ! public: true
- ! author: Medical Search Filter
- ! author: Medical Search Filter
+! description: Comprehensive filter for Brave search engine that boosts trusted medical sources and discards paywalled/spam sites. Weights range from 6-10, with 10 being highest trust/accessibility.
+! public: true
+! author: Medical Search Filter
 ! version: 3.0
 ! avatar: #00A86B
-! updated: 2025-01-24
+! updated: 2025-06-25
 
 ! homepage: https://github.com/pvanand07/goggles-quickstart
-! Boost - Government & Public Health (Highest Trust)
 ! issues: https://github.com/pvanand07/goggles-quickstart/issues
 ! license: MIT
 
